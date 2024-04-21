@@ -4,8 +4,8 @@
     "description": "Extract study plan from EPFL",
     "main": "index.js",
     "scripts": {
-        "start": "serve public -p 5501",
-        "dev": "concurrently \"tsc --watch\" \"serve public\"",
+        "start": "npx tsc --watch && serve public -p 5501",
+        "dev": "concurrently \"tsc --watch\" \"serve public -p 5501\"",
         "tsc": "tsc",
         "lint:ts": "eslint 'src/**/*.ts' --fix",
         "prettier:ts": "prettier --write 'src/**/*.ts'",
