@@ -1,0 +1,37 @@
+{
+    "name": "epfl-study-plan-extractor",
+    "version": "1.0.0",
+    "description": "Extract study plan from EPFL",
+    "main": "index.js",
+    "scripts": {
+        "start": "serve public -p 5501",
+        "dev": "concurrently \"tsc --watch\" \"serve public\"",
+        "tsc": "tsc",
+        "lint:ts": "eslint 'src/**/*.ts' --fix",
+        "prettier:ts": "prettier --write 'src/**/*.ts'",
+        "lint": "eslint 'src/**/*.{js,ts,tsx}'",
+        "lint:fix": "eslint 'src/**/*.{js,ts,tsx}' --fix",
+        "format": "prettier --write 'src/**/*.{js,ts,tsx}'"
+    },
+    "devDependencies": {
+        "@typescript-eslint/eslint-plugin": "^5.3.0",
+        "@typescript-eslint/parser": "^5.3.0",
+        "concurrently": "^8.2.1",
+        "eslint": "^8.48.0",
+        "eslint-config-prettier": "^9.0.0",
+        "eslint-plugin-import": "^2.25.4",
+        "eslint-plugin-jsx-a11y": "^6.5.1",
+        "eslint-plugin-prettier": "^5.0.0",
+        "eslint-plugin-react": "^7.28.0",
+        "eslint-plugin-react-hooks": "^4.3.0",
+        "nodemon": "^3.0.1",
+        "parcel-bundler": "^1.12.5",
+        "prettier": "^3.0.3",
+        "typescript": "^4.4.3"
+    },
+    "dependencies": {
+        "cors": "^2.8.5",
+        "express": "^4.18.2",
+        "node-fetch": "^3.3.2"
+    }
+}
