@@ -46,13 +46,13 @@ export class StudyPlan {
         }
     }
 
-    public removeCoursesIf(predicate: (course: Course) => boolean) {
+    public removeCoursesIf(shouldBeRemoved: (course: Course) => boolean) {
         for (const bloc of this.courseBlocs) {
-            if (bloc.courses.every(predicate)) {
+            if (bloc.courses.every(shouldBeRemoved)) {
                 bloc.blocElement.remove();
             } else {
                 bloc.courses.forEach(course => {
-                    if (predicate(course)) {
+                    if (shouldBeRemoved(course)) {
                         course.courseElement.remove();
                     }
                 });
