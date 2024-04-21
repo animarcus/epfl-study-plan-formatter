@@ -23,7 +23,8 @@ document.addEventListener("DOMContentLoaded", () => {
     studyPlan.removeCoursesIf(course => {
         return course.semesterName != `Bachelor ${semNum}` && semNum != 0;
     });
-
+    
+    addNavbarToHeader(newState);
     applyState(newState)
 }, false);
 
@@ -58,10 +59,41 @@ function applyState(state: Node) {
     }
 }
 
-function addDivToHeader(container: Element) {
-    const headerParent = document.querySelector(".page-header.d-xl-flex.justify-content-xl-between.align-items-xl-center.mb-5");
-    const div = document.createElement('div');
-    headerParent?.appendChild(div);
+function createNavbar(parent: Element) {
+    const navbar = document.createElement('div');
+    navbar.className = 'navbar';
+    navbar.style.border = '1px solid black'; // Add an outline around the div
+    navbar.style.padding = '10px'; // Add some padding
+    navbar.style.margin = '30px 20px';
+
+    const pages = ['in-ba3', 'in-ba4', 'sc-ba3', 'sc-ba4'];
+    pages.forEach(page => {
+        const link = document.createElement('a');
+        link.href = `${page}.html`;
+        link.textContent = page.toUpperCase().replace('-', ' ');
+        link.style.backgroundColor = '#4CAF50'; // Green background
+        link.style.border = 'none'; // Remove border
+        link.style.color = 'white'; // White text
+        link.style.padding = '15px 32px'; // Padding
+        link.style.textAlign = 'center'; // Centered text
+        link.style.textDecoration = 'none'; // Remove underline
+        link.style.display = 'inline-block'; // Inline-block
+        link.style.fontSize = '16px'; // Font size
+        link.style.margin = '4px 2px'; // Margin
+        link.style.cursor = 'pointer'; // Cursor pointer
+        navbar.appendChild(link);
+    });
+
+    parent.appendChild(navbar);
+}
+
+function addNavbarToHeader(state: Element) {
+    const headerParent = state.querySelector(".page-header.d-xl-flex.justify-content-xl-between.align-items-xl-center.mb-5");
+    if (headerParent) {
+        const div = document.createElement('div');
+        createNavbar(div);
+        headerParent.insertAdjacentElement('afterend', div);
+    }
 }
 
 function removeElements() {
