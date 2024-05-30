@@ -10,6 +10,7 @@ declare global {
 const semNum: number = window.semesterNum;
 
 document.addEventListener("DOMContentLoaded", () => {
+    console.log(window.location.search)
     adaptLinks();
     const newState: Element = getNewState();
 
@@ -18,7 +19,7 @@ document.addEventListener("DOMContentLoaded", () => {
     
     removeElements(); // Remove specific elements from the page
     
-    studyPlan.printAll();
+    // studyPlan.printAll();
     
     studyPlan.removeCoursesIf(course => {
         return course.semesterName != `Bachelor ${semNum}` && semNum != 0;
