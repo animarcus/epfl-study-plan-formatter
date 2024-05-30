@@ -1,0 +1,14 @@
+{
+    "[markdown]": {
+			"editor.bracketPairColorization.enabled": false,
+			"editor.codeLens": false
+    },
+    "markdownlint.config": {
+        "MD028": false,
+        "MD029": false,
+        "MD041": false,
+        "MD012": false,
+        "MD009": false,
+        "MD047": false,
+    }
+}
