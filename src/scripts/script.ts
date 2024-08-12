@@ -68,7 +68,7 @@ function createNavbar(parent: Element) {
     navbar.style.padding = '10px'; // Add some padding
     navbar.style.margin = '30px 20px';
 
-    const pages = ['bachelor-in', 'bachelor-sc',, 'in-ba3', 'in-ba4', 'sc-ba3', 'sc-ba4'];
+    const pages = ['bachelor-in', 'bachelor-sc', 'in-ba3', 'in-ba4', 'sc-ba3', 'sc-ba4'];
     pages.forEach(page => {
         const link = document.createElement('a');
         link.href = `${page}.html`;
