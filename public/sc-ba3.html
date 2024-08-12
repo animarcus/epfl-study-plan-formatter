@@ -7,12 +7,17 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <link rel="shortcut icon" type="image/x-icon" href="https://web2018.epfl.ch/6.5.1/icons/favicon.ico">
-  <link rel="icon" type="image/png" sizes="16x16" href="https://web2018.epfl.ch/6.5.1/icons/favicon-16.png">
-  <link rel="icon" type="image/png" sizes="32x32" href="https://web2018.epfl.ch/6.5.1/icons/favicon-32.png">
-  <link rel="apple-touch-icon" sizes="180x180" href="https://web2018.epfl.ch/6.5.1/icons/apple-touch-icon.png">
+  <link rel="shortcut icon" type="image/x-icon" href="https://web2018.epfl.ch/7.0.0/icons/favicon.ico">
+  <link rel="icon" type="image/png" sizes="16x16" href="https://web2018.epfl.ch/7.0.0/icons/favicon-16.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="https://web2018.epfl.ch/7.0.0/icons/favicon-32.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="https://web2018.epfl.ch/7.0.0/icons/apple-touch-icon.png">
 
-  <link rel="stylesheet" href="https://web2018.epfl.ch/6.5.1/css/elements.min.css">
+  <link rel="stylesheet" href="https://web2018.epfl.ch/7.0.0/css/elements.min.css">
+  <style>
+    .cours-name i {
+      display: block;
+    }
+  </style>
 
   <script>(function (w, d, s, l, i) {
       w[l] = w[l] || []; w[l].push({
@@ -31,7 +36,7 @@
     <header role="banner" class="header header-light">
       <div class="header-light-content">
         <a class="logo" href="//www.epfl.ch">
-          <img src="https://web2018.epfl.ch/6.5.1/icons/epfl-logo.svg"
+          <img src="https://web2018.epfl.ch/7.0.0/icons/epfl-logo.svg"
             alt="Logo EPFL, École polytechnique fédérale de Lausanne" class="img-fluid">
         </a>
 
@@ -97,17 +102,34 @@
       <!-- breadcrumb -->
       <div class="breadcrumb-container">
         <nav aria-label="breadcrumb" class="breadcrumb-wrapper">
-          <ol class="breadcrumb">
+          <ol class="breadcrumb pb-0">
             <li class="breadcrumb-item">
-              <a href="//www.epfl.ch" title="Home" aria-label="Home">
+              <a href="//www.epfl.ch" title="Aller au site principal" aria-label="Aller au site principal"
+                class="bread-link bread-home">
                 <svg class="icon" aria-hidden="true">
                   <use xlink:href="#icon-home"></use>
                 </svg>
               </a>
             </li>
-            <li class="breadcrumb-item"><a href="/index.fr.html">Plans d'études</a></li>
-            <li class="breadcrumb-item"><a href="/studyplan/fr/bachelor/">Cycle Bachelor</a></li>
-            <li class="breadcrumb-item active">Systèmes de communication</li>
+            <li class="breadcrumb-item expand-links">
+              <button class="btn btn-expand-links" aria-expanded="false" title="Afficher le chemin complet">
+                <span class="dots" aria-hidden="true">…</span>
+                <span class="sr-only">Afficher le chemin complet</span>
+              </button>
+            </li>
+            <li class="breadcrumb-item">
+              <a href="/index.fr.html">
+                Plans d'études
+              </a>
+            </li>
+            <li class="breadcrumb-item">
+              <a href="/studyplan/fr/bachelor/">
+                Cycle Bachelor
+              </a>
+            </li>
+            <li class="breadcrumb-item active">
+              Systèmes de communication
+            </li>
           </ol>
         </nav>
       </div>
@@ -115,9 +137,9 @@
       <div class="nav-toggle-layout nav-aside-layout">
         <div class="w-100 pb-3">
           <main id="main" role="main" class="content container-grid">
-            <div class="container-full px-5 px-xxl-6 mt-5">
+            <div class="container-full px-3 px-md-5 px-xxl-6 mt-5">
               <header class="page-header d-xl-flex justify-content-xl-between align-items-xl-center mb-5">
-                <h2 class="mb-4 mb-xl-0">Systèmes de communication 2023-24</h2>
+                <h2 class="mb-4 mb-xl-0">Systèmes de communication 2024-25</h2>
                 <a href="http://isa.epfl.ch/pe/plan_etude_bama_cyclebachelor_sc_fr.pdf">
                   <button class="btn btn-sm btn-secondary">
                     <svg class="icon feather mb-1" aria-hidden="true">
@@ -140,40 +162,40 @@
                     <div class="bachlor">
                       <div class="titre_bachlor bold">Bachelor 3</div>
                       <div class="titre">
-                        <div class="cep"><abbr title="c">c</abbr></div>
-                        <div class="cep"><abbr title="e">e</abbr></div>
-                        <div class="cep"><abbr title="p">p</abbr></div>
+                        <div class="cep"><abbr title="Cours : ">c</abbr></div>
+                        <div class="cep"><abbr title="Exercices : ">e</abbr></div>
+                        <div class="cep"><abbr title="Projet : ">p</abbr></div>
                       </div>
                     </div>
                     <div class="bachlor">
                       <div class="titre_bachlor bold">Bachelor 4</div>
                       <div class="titre">
-                        <div class="cep"><abbr title="c">c</abbr></div>
-                        <div class="cep"><abbr title="e">e</abbr></div>
-                        <div class="cep"><abbr title="p">p</abbr></div>
+                        <div class="cep"><abbr title="Cours : ">c</abbr></div>
+                        <div class="cep"><abbr title="Exercices : ">e</abbr></div>
+                        <div class="cep"><abbr title="Projet : ">p</abbr></div>
                       </div>
                     </div>
                     <div class="bachlor">
                       <div class="titre_bachlor bold">Bachelor 5</div>
                       <div class="titre">
-                        <div class="cep"><abbr title="c">c</abbr></div>
-                        <div class="cep"><abbr title="e">e</abbr></div>
-                        <div class="cep"><abbr title="p">p</abbr></div>
+                        <div class="cep"><abbr title="Cours : ">c</abbr></div>
+                        <div class="cep"><abbr title="Exercices : ">e</abbr></div>
+                        <div class="cep"><abbr title="Projet : ">p</abbr></div>
                       </div>
                     </div>
                     <div class="bachlor">
                       <div class="titre_bachlor bold">Bachelor 6</div>
                       <div class="titre">
-                        <div class="cep"><abbr title="c">c</abbr></div>
-                        <div class="cep"><abbr title="e">e</abbr></div>
-                        <div class="cep"><abbr title="p">p</abbr></div>
+                        <div class="cep"><abbr title="Cours : ">c</abbr></div>
+                        <div class="cep"><abbr title="Exercices : ">e</abbr></div>
+                        <div class="cep"><abbr title="Projet : ">p</abbr></div>
                       </div>
                     </div>
                     <div class="examen">
                       <div class="titre_bachlor bold">Examen</div>
                     </div>
                     <div class="credit">
-                      <div class="titre_bachlor bold">Crédits</div>
+                      <div class="titre_bachlor bold">Crédits / Coefficient</div>
                     </div>
                   </div>
                   <div class="clear"></div>
@@ -186,8 +208,8 @@
                           I</a></div>
                       <div class="cours-info">CS-250 / Section IN</div>
                       <div class="enseignement-name"><a
-                          href="http://people.epfl.ch/cgi-bin/people?id=179025&amp;lang=fr&amp;cvlang=fr">Kapralov</a>,
-                        <a href="http://people.epfl.ch/cgi-bin/people?id=213225&amp;lang=fr&amp;cvlang=fr">Svensson</a>
+                          href="http://people.epfl.ch/cgi-bin/people?id=348124&amp;lang=fr&amp;cvlang=fr">Chiesa</a>, <a
+                          href="http://people.epfl.ch/cgi-bin/people?id=213225&amp;lang=fr&amp;cvlang=fr">Svensson</a>
                       </div>
                     </div>
                     <div data-title="Langue" class="langue">
@@ -202,8 +224,8 @@
                     </div>
                     <div data-title="Bachelor 4" class="bachlor local-color bachlor-color">
                       <div class="bachlor-text">
-                        <div class="cep"><span class="label sr-only"></span>4h</div>
-                        <div class="cep"><span class="label sr-only"></span>2h</div>
+                        <div class="cep"><span class="label sr-only">Cours : </span>4h</div>
+                        <div class="cep"><span class="label sr-only">Exercices : </span>2h</div>
                         <div class="cep">-</div>
                       </div>
                     </div>
@@ -238,12 +260,10 @@
                 <div class="line-down">
                   <div class="line">
                     <div data-title="Analyse III" class="cours">
-                      <div class="cours-name"><a
-                          href="/studyplan/fr/bachelor/systemes-de-communication/coursebook/analyse-iii-MATH-203-C">Analyse
-                          III</a></div>
-                      <div class="cours-info">MATH-203(c) / Section MA</div>
+                      <div class="cours-name">Analyse III</div>
+                      <div class="cours-info">MATH-203(d) / Section MA</div>
                       <div class="enseignement-name"><a
-                          href="http://people.epfl.ch/cgi-bin/people?id=175323&amp;lang=fr&amp;cvlang=fr">Basterrechea</a>
+                          href="http://people.epfl.ch/cgi-bin/people?id=341718&amp;lang=fr&amp;cvlang=fr">Licht</a>
                       </div>
                     </div>
                     <div data-title="Langue" class="langue">
@@ -251,8 +271,8 @@
                     </div>
                     <div data-title="Bachelor 3" class="bachlor local-color-light bachlor-color">
                       <div class="bachlor-text">
-                        <div class="cep"><span class="label sr-only"></span>2h</div>
-                        <div class="cep"><span class="label sr-only"></span>2h</div>
+                        <div class="cep"><span class="label sr-only">Cours : </span>3h</div>
+                        <div class="cep"><span class="label sr-only">Exercices : </span>2h</div>
                         <div class="cep">-</div>
                       </div>
                     </div>
@@ -281,119 +301,7 @@
                       <div class="exam-text"><b>Session d'hiver</b><br /><span>Ecrit</span></div>
                     </div>
                     <div data-title="Crédits" class="credit red-color">
-                      <div class="credit-time">4</div>
-                    </div><button class="btn-collapse">
-                      <span class="show">afficher</span>
-                      <span class="">masquer</span>
-                      <svg viewBox="0 0 10 5" xmlns="http://www.w3.org/2000/svg" class="icon">
-                        <path d="M.235.162h9.757l-4.879 4.77z" fill="#ffffff" fill-rule="evenodd" />
-                      </svg>
-                    </button>
-                  </div>
-                </div>
-                <div class="line-down">
-                  <div class="line">
-                    <div data-title="Analyse IV" class="cours">
-                      <div class="cours-name"><a
-                          href="/studyplan/fr/bachelor/systemes-de-communication/coursebook/analyse-iv-MATH-207-D">Analyse
-                          IV</a></div>
-                      <div class="cours-info">MATH-207(d) / Section MA</div>
-                      <div class="enseignement-name"><a
-                          href="http://people.epfl.ch/cgi-bin/people?id=175323&amp;lang=fr&amp;cvlang=fr">Basterrechea</a>
-                      </div>
-                    </div>
-                    <div data-title="Langue" class="langue">
-                      <div class="langue"><abbr title="francais">FR</abbr></div>
-                    </div>
-                    <div data-title="Bachelor 3" class="bachlor local-color-light bachlor-color">
-                      <div class="bachlor-text">
-                        <div class="cep">-</div>
-                        <div class="cep">-</div>
-                        <div class="cep">-</div>
-                      </div>
-                    </div>
-                    <div data-title="Bachelor 4" class="bachlor local-color bachlor-color">
-                      <div class="bachlor-text">
-                        <div class="cep"><span class="label sr-only"></span>2h</div>
-                        <div class="cep"><span class="label sr-only"></span>2h</div>
-                        <div class="cep">-</div>
-                      </div>
-                    </div>
-                    <div data-title="Bachelor 5" class="bachlor local-color-light bachlor-color">
-                      <div class="bachlor-text">
-                        <div class="cep">-</div>
-                        <div class="cep">-</div>
-                        <div class="cep">-</div>
-                      </div>
-                    </div>
-                    <div data-title="Bachelor 6" class="bachlor local-color bachlor-color">
-                      <div class="bachlor-text">
-                        <div class="cep">-</div>
-                        <div class="cep">-</div>
-                        <div class="cep">-</div>
-                      </div>
-                    </div>
-                    <div data-title="Examen" class="examen">
-                      <div class="exam-text"><b>Session d'été</b><br /><span>Ecrit</span></div>
-                    </div>
-                    <div data-title="Crédits" class="credit red-color">
-                      <div class="credit-time">4</div>
-                    </div><button class="btn-collapse">
-                      <span class="show">afficher</span>
-                      <span class="">masquer</span>
-                      <svg viewBox="0 0 10 5" xmlns="http://www.w3.org/2000/svg" class="icon">
-                        <path d="M.235.162h9.757l-4.879 4.77z" fill="#ffffff" fill-rule="evenodd" />
-                      </svg>
-                    </button>
-                  </div>
-                </div>
-                <div class="line-down">
-                  <div class="line">
-                    <div data-title="Computer networks" class="cours">
-                      <div class="cours-name"><a
-                          href="/studyplan/fr/bachelor/systemes-de-communication/coursebook/computer-networks-COM-208">Computer
-                          networks</a> <i>(réservé aux étudiants de IC devant refaire la matière)</i></div>
-                      <div class="cours-info">COM-208 / Section SC</div>
-                      <div class="enseignement-name"><a
-                          href="http://people.epfl.ch/cgi-bin/people?id=176638&amp;lang=fr&amp;cvlang=fr">Argyraki</a>
-                      </div>
-                    </div>
-                    <div data-title="Langue" class="langue">
-                      <div class="langue"><abbr title="anglais">EN</abbr></div>
-                    </div>
-                    <div data-title="Bachelor 3" class="bachlor local-color-light bachlor-color">
-                      <div class="bachlor-text">
-                        <div class="cep"><span class="label sr-only"></span>2h</div>
-                        <div class="cep"><span class="label sr-only"></span>2h</div>
-                        <div class="cep">-</div>
-                      </div>
-                    </div>
-                    <div data-title="Bachelor 4" class="bachlor local-color bachlor-color">
-                      <div class="bachlor-text">
-                        <div class="cep">-</div>
-                        <div class="cep">-</div>
-                        <div class="cep">-</div>
-                      </div>
-                    </div>
-                    <div data-title="Bachelor 5" class="bachlor local-color-light bachlor-color">
-                      <div class="bachlor-text">
-                        <div class="cep">-</div>
-                        <div class="cep">-</div>
-                        <div class="cep">-</div>
-                      </div>
-                    </div>
-                    <div data-title="Bachelor 6" class="bachlor local-color bachlor-color">
-                      <div class="bachlor-text">
-                        <div class="cep">-</div>
-                        <div class="cep">-</div>
-                        <div class="cep">-</div>
-                      </div>
-                    </div>
-                    <div data-title="Examen" class="examen">
-                      <div class="exam-text"><b>Session d'hiver</b><br /><span>Ecrit</span></div>
-                    </div>
-                    <div data-title="Crédits" class="credit red-color">
-                      <div class="credit-time">5</div>
+                      <div class="credit-time">6</div>
                     </div><button class="btn-collapse">
                       <span class="show">afficher</span>
                       <span class="">masquer</span>
@@ -420,16 +328,16 @@
                     </div>
                     <div data-title="Bachelor 3" class="bachlor local-color-light bachlor-color">
                       <div class="bachlor-text">
-                        <div class="cep"><span class="label sr-only"></span>4h</div>
-                        <div class="cep"><span class="label sr-only"></span>2h</div>
-                        <div class="cep"><span class="label sr-only"></span>2h</div>
+                        <div class="cep">-</div>
+                        <div class="cep">-</div>
+                        <div class="cep">-</div>
                       </div>
                     </div>
                     <div data-title="Bachelor 4" class="bachlor local-color bachlor-color">
                       <div class="bachlor-text">
-                        <div class="cep">-</div>
-                        <div class="cep">-</div>
-                        <div class="cep">-</div>
+                        <div class="cep"><span class="label sr-only">Cours : </span>4h</div>
+                        <div class="cep"><span class="label sr-only">Exercices : </span>2h</div>
+                        <div class="cep"><span class="label sr-only">Projet : </span>2h</div>
                       </div>
                     </div>
                     <div data-title="Bachelor 5" class="bachlor local-color-light bachlor-color">
@@ -447,7 +355,7 @@
                       </div>
                     </div>
                     <div data-title="Examen" class="examen">
-                      <div class="exam-text"><b>Session d'hiver</b><br /><span>Ecrit</span></div>
+                      <div class="exam-text"><b>Session d'été</b><br /><span>Ecrit</span></div>
                     </div>
                     <div data-title="Crédits" class="credit red-color">
                       <div class="credit-time">8</div>
@@ -474,40 +382,40 @@
                     <div class="bachlor">
                       <div class="titre_bachlor bold">Bachelor 3</div>
                       <div class="titre">
-                        <div class="cep"><abbr title="c">c</abbr></div>
-                        <div class="cep"><abbr title="e">e</abbr></div>
-                        <div class="cep"><abbr title="p">p</abbr></div>
+                        <div class="cep"><abbr title="Cours : ">c</abbr></div>
+                        <div class="cep"><abbr title="Exercices : ">e</abbr></div>
+                        <div class="cep"><abbr title="Projet : ">p</abbr></div>
                       </div>
                     </div>
                     <div class="bachlor">
                       <div class="titre_bachlor bold">Bachelor 4</div>
                       <div class="titre">
-                        <div class="cep"><abbr title="c">c</abbr></div>
-                        <div class="cep"><abbr title="e">e</abbr></div>
-                        <div class="cep"><abbr title="p">p</abbr></div>
+                        <div class="cep"><abbr title="Cours : ">c</abbr></div>
+                        <div class="cep"><abbr title="Exercices : ">e</abbr></div>
+                        <div class="cep"><abbr title="Projet : ">p</abbr></div>
                       </div>
                     </div>
                     <div class="bachlor">
                       <div class="titre_bachlor bold">Bachelor 5</div>
                       <div class="titre">
-                        <div class="cep"><abbr title="c">c</abbr></div>
-                        <div class="cep"><abbr title="e">e</abbr></div>
-                        <div class="cep"><abbr title="p">p</abbr></div>
+                        <div class="cep"><abbr title="Cours : ">c</abbr></div>
+                        <div class="cep"><abbr title="Exercices : ">e</abbr></div>
+                        <div class="cep"><abbr title="Projet : ">p</abbr></div>
                       </div>
                     </div>
                     <div class="bachlor">
                       <div class="titre_bachlor bold">Bachelor 6</div>
                       <div class="titre">
-                        <div class="cep"><abbr title="c">c</abbr></div>
-                        <div class="cep"><abbr title="e">e</abbr></div>
-                        <div class="cep"><abbr title="p">p</abbr></div>
+                        <div class="cep"><abbr title="Cours : ">c</abbr></div>
+                        <div class="cep"><abbr title="Exercices : ">e</abbr></div>
+                        <div class="cep"><abbr title="Projet : ">p</abbr></div>
                       </div>
                     </div>
                     <div class="examen">
                       <div class="titre_bachlor bold">Examen</div>
                     </div>
                     <div class="credit">
-                      <div class="titre_bachlor bold">Crédits</div>
+                      <div class="titre_bachlor bold">Crédits / Coefficient</div>
                     </div>
                   </div>
                   <div class="clear"></div>
@@ -538,9 +446,9 @@
                     </div>
                     <div data-title="Bachelor 4" class="bachlor local-color bachlor-color">
                       <div class="bachlor-text">
-                        <div class="cep"><span class="label sr-only"></span>4h</div>
-                        <div class="cep"><span class="label sr-only"></span>4h</div>
-                        <div class="cep">-</div>
+                        <div class="cep"><span class="label sr-only">Cours : </span>4h</div>
+                        <div class="cep"><span class="label sr-only">Exercices : </span>2h</div>
+                        <div class="cep"><span class="label sr-only">Projet : </span>2h</div>
                       </div>
                     </div>
                     <div data-title="Bachelor 5" class="bachlor local-color-light bachlor-color">
@@ -562,62 +470,6 @@
                     </div>
                     <div data-title="Crédits" class="credit red-color">
                       <div class="credit-time">8</div>
-                    </div><button class="btn-collapse">
-                      <span class="show">afficher</span>
-                      <span class="">masquer</span>
-                      <svg viewBox="0 0 10 5" xmlns="http://www.w3.org/2000/svg" class="icon">
-                        <path d="M.235.162h9.757l-4.879 4.77z" fill="#ffffff" fill-rule="evenodd" />
-                      </svg>
-                    </button>
-                  </div>
-                </div>
-                <div class="line-down">
-                  <div class="line">
-                    <div data-title="General physics: electromagnetism" class="cours">
-                      <div class="cours-name"><a
-                          href="/studyplan/fr/bachelor/systemes-de-communication/coursebook/general-physics-electromagnetism-PHYS-114">General
-                          physics: electromagnetism</a></div>
-                      <div class="cours-info">PHYS-114 / Section PH</div>
-                      <div class="enseignement-name"><a
-                          href="http://people.epfl.ch/cgi-bin/people?id=187230&amp;lang=fr&amp;cvlang=fr">Shchutska</a>
-                      </div>
-                    </div>
-                    <div data-title="Langue" class="langue">
-                      <div class="langue"><abbr title="anglais">EN</abbr></div>
-                    </div>
-                    <div data-title="Bachelor 3" class="bachlor local-color-light bachlor-color">
-                      <div class="bachlor-text">
-                        <div class="cep"><span class="label sr-only"></span>2h</div>
-                        <div class="cep"><span class="label sr-only"></span>2h</div>
-                        <div class="cep">-</div>
-                      </div>
-                    </div>
-                    <div data-title="Bachelor 4" class="bachlor local-color bachlor-color">
-                      <div class="bachlor-text">
-                        <div class="cep">-</div>
-                        <div class="cep">-</div>
-                        <div class="cep">-</div>
-                      </div>
-                    </div>
-                    <div data-title="Bachelor 5" class="bachlor local-color-light bachlor-color">
-                      <div class="bachlor-text">
-                        <div class="cep">-</div>
-                        <div class="cep">-</div>
-                        <div class="cep">-</div>
-                      </div>
-                    </div>
-                    <div data-title="Bachelor 6" class="bachlor local-color bachlor-color">
-                      <div class="bachlor-text">
-                        <div class="cep">-</div>
-                        <div class="cep">-</div>
-                        <div class="cep">-</div>
-                      </div>
-                    </div>
-                    <div data-title="Examen" class="examen">
-                      <div class="exam-text"><b>Session d'hiver</b><br /><span>Ecrit</span></div>
-                    </div>
-                    <div data-title="Crédits" class="credit red-color">
-                      <div class="credit-time">4</div>
                     </div><button class="btn-collapse">
                       <span class="show">afficher</span>
                       <span class="">masquer</span>
@@ -651,9 +503,9 @@
                     </div>
                     <div data-title="Bachelor 4" class="bachlor local-color bachlor-color">
                       <div class="bachlor-text">
-                        <div class="cep"><span class="label sr-only"></span>2h</div>
-                        <div class="cep"><span class="label sr-only"></span>2h</div>
-                        <div class="cep"><span class="label sr-only"></span>2h</div>
+                        <div class="cep"><span class="label sr-only">Cours : </span>2h</div>
+                        <div class="cep"><span class="label sr-only">Exercices : </span>2h</div>
+                        <div class="cep"><span class="label sr-only">Projet : </span>2h</div>
                       </div>
                     </div>
                     <div data-title="Bachelor 5" class="bachlor local-color-light bachlor-color">
@@ -686,22 +538,77 @@
                 </div>
                 <div class="line-down">
                   <div class="line">
+                    <div data-title="Physique générale : électromagnétisme" class="cours">
+                      <div class="cours-name"><a
+                          href="/studyplan/fr/bachelor/systemes-de-communication/coursebook/physique-generale-electromagnetisme-PHYS-114">Physique
+                          générale : électromagnétisme</a> <i>(.)</i></div>
+                      <div class="cours-info">PHYS-114 / Section PH</div>
+                      <div class="enseignement-name"><a
+                          href="http://people.epfl.ch/cgi-bin/people?id=215982&amp;lang=fr&amp;cvlang=fr">Avino</a>
+                      </div>
+                    </div>
+                    <div data-title="Langue" class="langue">
+                      <div class="langue"><abbr title="francais">FR</abbr></div>
+                    </div>
+                    <div data-title="Bachelor 3" class="bachlor local-color-light bachlor-color">
+                      <div class="bachlor-text">
+                        <div class="cep"><span class="label sr-only">Cours : </span>2h</div>
+                        <div class="cep"><span class="label sr-only">Exercices : </span>2h</div>
+                        <div class="cep">-</div>
+                      </div>
+                    </div>
+                    <div data-title="Bachelor 4" class="bachlor local-color bachlor-color">
+                      <div class="bachlor-text">
+                        <div class="cep">-</div>
+                        <div class="cep">-</div>
+                        <div class="cep">-</div>
+                      </div>
+                    </div>
+                    <div data-title="Bachelor 5" class="bachlor local-color-light bachlor-color">
+                      <div class="bachlor-text">
+                        <div class="cep">-</div>
+                        <div class="cep">-</div>
+                        <div class="cep">-</div>
+                      </div>
+                    </div>
+                    <div data-title="Bachelor 6" class="bachlor local-color bachlor-color">
+                      <div class="bachlor-text">
+                        <div class="cep">-</div>
+                        <div class="cep">-</div>
+                        <div class="cep">-</div>
+                      </div>
+                    </div>
+                    <div data-title="Examen" class="examen">
+                      <div class="exam-text"><b>Session d'hiver</b><br /><span>Ecrit</span></div>
+                    </div>
+                    <div data-title="Crédits" class="credit red-color">
+                      <div class="credit-time">4</div>
+                    </div><button class="btn-collapse">
+                      <span class="show">afficher</span>
+                      <span class="">masquer</span>
+                      <svg viewBox="0 0 10 5" xmlns="http://www.w3.org/2000/svg" class="icon">
+                        <path d="M.235.162h9.757l-4.879 4.77z" fill="#ffffff" fill-rule="evenodd" />
+                      </svg>
+                    </button>
+                  </div>
+                </div>
+                <div class="line-down">
+                  <div class="line">
                     <div data-title="Probability and statistics (for IC)" class="cours">
                       <div class="cours-name"><a
                           href="/studyplan/fr/bachelor/systemes-de-communication/coursebook/probability-and-statistics-for-ic-MATH-232">Probability
                           and statistics (for IC)</a></div>
                       <div class="cours-info">MATH-232 / Section MA</div>
                       <div class="enseignement-name"><a
-                          href="http://people.epfl.ch/cgi-bin/people?id=341241&amp;lang=fr&amp;cvlang=fr">Berthier</a>
-                      </div>
+                          href="http://people.epfl.ch/cgi-bin/people?id=120091&amp;lang=fr&amp;cvlang=fr">Abbé</a></div>
                     </div>
                     <div data-title="Langue" class="langue">
                       <div class="langue"><abbr title="anglais">EN</abbr></div>
                     </div>
                     <div data-title="Bachelor 3" class="bachlor local-color-light bachlor-color">
                       <div class="bachlor-text">
-                        <div class="cep"><span class="label sr-only"></span>4h</div>
-                        <div class="cep"><span class="label sr-only"></span>2h</div>
+                        <div class="cep"><span class="label sr-only">Cours : </span>4h</div>
+                        <div class="cep"><span class="label sr-only">Exercices : </span>2h</div>
                         <div class="cep">-</div>
                       </div>
                     </div>
@@ -754,40 +661,40 @@
                     <div class="bachlor">
                       <div class="titre_bachlor bold">Bachelor 3</div>
                       <div class="titre">
-                        <div class="cep"><abbr title="c">c</abbr></div>
-                        <div class="cep"><abbr title="e">e</abbr></div>
-                        <div class="cep"><abbr title="p">p</abbr></div>
+                        <div class="cep"><abbr title="Cours : ">c</abbr></div>
+                        <div class="cep"><abbr title="Exercices : ">e</abbr></div>
+                        <div class="cep"><abbr title="Projet : ">p</abbr></div>
                       </div>
                     </div>
                     <div class="bachlor">
                       <div class="titre_bachlor bold">Bachelor 4</div>
                       <div class="titre">
-                        <div class="cep"><abbr title="c">c</abbr></div>
-                        <div class="cep"><abbr title="e">e</abbr></div>
-                        <div class="cep"><abbr title="p">p</abbr></div>
+                        <div class="cep"><abbr title="Cours : ">c</abbr></div>
+                        <div class="cep"><abbr title="Exercices : ">e</abbr></div>
+                        <div class="cep"><abbr title="Projet : ">p</abbr></div>
                       </div>
                     </div>
                     <div class="bachlor">
                       <div class="titre_bachlor bold">Bachelor 5</div>
                       <div class="titre">
-                        <div class="cep"><abbr title="c">c</abbr></div>
-                        <div class="cep"><abbr title="e">e</abbr></div>
-                        <div class="cep"><abbr title="p">p</abbr></div>
+                        <div class="cep"><abbr title="Cours : ">c</abbr></div>
+                        <div class="cep"><abbr title="Exercices : ">e</abbr></div>
+                        <div class="cep"><abbr title="Projet : ">p</abbr></div>
                       </div>
                     </div>
                     <div class="bachlor">
                       <div class="titre_bachlor bold">Bachelor 6</div>
                       <div class="titre">
-                        <div class="cep"><abbr title="c">c</abbr></div>
-                        <div class="cep"><abbr title="e">e</abbr></div>
-                        <div class="cep"><abbr title="p">p</abbr></div>
+                        <div class="cep"><abbr title="Cours : ">c</abbr></div>
+                        <div class="cep"><abbr title="Exercices : ">e</abbr></div>
+                        <div class="cep"><abbr title="Projet : ">p</abbr></div>
                       </div>
                     </div>
                     <div class="examen">
                       <div class="titre_bachlor bold">Examen</div>
                     </div>
                     <div class="credit">
-                      <div class="titre_bachlor bold">Crédits</div>
+                      <div class="titre_bachlor bold">Crédits / Coefficient</div>
                     </div>
                   </div>
                   <div class="clear"></div>
@@ -822,8 +729,8 @@
                     </div>
                     <div data-title="Bachelor 5" class="bachlor local-color-light bachlor-color">
                       <div class="bachlor-text">
-                        <div class="cep"><span class="label sr-only"></span>2h</div>
-                        <div class="cep"><span class="label sr-only"></span>2h</div>
+                        <div class="cep"><span class="label sr-only">Cours : </span>2h</div>
+                        <div class="cep"><span class="label sr-only">Exercices : </span>2h</div>
                         <div class="cep">-</div>
                       </div>
                     </div>
@@ -856,7 +763,8 @@
                           security and privacy</a></div>
                       <div class="cours-info">COM-301 / Section SC</div>
                       <div class="enseignement-name"><a
-                          href="http://people.epfl.ch/cgi-bin/people?id=290659&amp;lang=fr&amp;cvlang=fr">Troncoso</a>
+                          href="http://people.epfl.ch/cgi-bin/people?id=229105&amp;lang=fr&amp;cvlang=fr">Bugnion</a>,
+                        <a href="http://people.epfl.ch/cgi-bin/people?id=290659&amp;lang=fr&amp;cvlang=fr">Troncoso</a>
                       </div>
                     </div>
                     <div data-title="Langue" class="langue">
@@ -878,9 +786,9 @@
                     </div>
                     <div data-title="Bachelor 5" class="bachlor local-color-light bachlor-color">
                       <div class="bachlor-text">
-                        <div class="cep"><span class="label sr-only"></span>2h</div>
-                        <div class="cep"><span class="label sr-only"></span>2h</div>
-                        <div class="cep">-</div>
+                        <div class="cep"><span class="label sr-only">Cours : </span>2h</div>
+                        <div class="cep"><span class="label sr-only">Exercices : </span>1h</div>
+                        <div class="cep"><span class="label sr-only">Projet : </span>1h</div>
                       </div>
                     </div>
                     <div data-title="Bachelor 6" class="bachlor local-color bachlor-color">
@@ -894,7 +802,7 @@
                       <div class="exam-text"><b>Session d'hiver</b><br /><span>Ecrit</span></div>
                     </div>
                     <div data-title="Crédits" class="credit red-color">
-                      <div class="credit-time">4</div>
+                      <div class="credit-time">6</div>
                     </div><button class="btn-collapse">
                       <span class="show">afficher</span>
                       <span class="">masquer</span>
@@ -934,8 +842,8 @@
                     </div>
                     <div data-title="Bachelor 5" class="bachlor local-color-light bachlor-color">
                       <div class="bachlor-text">
-                        <div class="cep"><span class="label sr-only"></span>4h</div>
-                        <div class="cep"><span class="label sr-only"></span>2h</div>
+                        <div class="cep"><span class="label sr-only">Cours : </span>4h</div>
+                        <div class="cep"><span class="label sr-only">Exercices : </span>2h</div>
                         <div class="cep">-</div>
                       </div>
                     </div>
@@ -997,9 +905,9 @@
                     </div>
                     <div data-title="Bachelor 6" class="bachlor local-color bachlor-color">
                       <div class="bachlor-text">
-                        <div class="cep"><span class="label sr-only"></span>4h</div>
-                        <div class="cep"><span class="label sr-only"></span>2h</div>
-                        <div class="cep">-</div>
+                        <div class="cep"><span class="label sr-only">Cours : </span>4h</div>
+                        <div class="cep"><span class="label sr-only">Exercices : </span>1h</div>
+                        <div class="cep"><span class="label sr-only">Projet : </span>1h</div>
                       </div>
                     </div>
                     <div data-title="Examen" class="examen">
@@ -1030,40 +938,40 @@
                     <div class="bachlor">
                       <div class="titre_bachlor bold">Bachelor 3</div>
                       <div class="titre">
-                        <div class="cep"><abbr title="c">c</abbr></div>
-                        <div class="cep"><abbr title="e">e</abbr></div>
-                        <div class="cep"><abbr title="p">p</abbr></div>
+                        <div class="cep"><abbr title="Cours : ">c</abbr></div>
+                        <div class="cep"><abbr title="Exercices : ">e</abbr></div>
+                        <div class="cep"><abbr title="Projet : ">p</abbr></div>
                       </div>
                     </div>
                     <div class="bachlor">
                       <div class="titre_bachlor bold">Bachelor 4</div>
                       <div class="titre">
-                        <div class="cep"><abbr title="c">c</abbr></div>
-                        <div class="cep"><abbr title="e">e</abbr></div>
-                        <div class="cep"><abbr title="p">p</abbr></div>
+                        <div class="cep"><abbr title="Cours : ">c</abbr></div>
+                        <div class="cep"><abbr title="Exercices : ">e</abbr></div>
+                        <div class="cep"><abbr title="Projet : ">p</abbr></div>
                       </div>
                     </div>
                     <div class="bachlor">
                       <div class="titre_bachlor bold">Bachelor 5</div>
                       <div class="titre">
-                        <div class="cep"><abbr title="c">c</abbr></div>
-                        <div class="cep"><abbr title="e">e</abbr></div>
-                        <div class="cep"><abbr title="p">p</abbr></div>
+                        <div class="cep"><abbr title="Cours : ">c</abbr></div>
+                        <div class="cep"><abbr title="Exercices : ">e</abbr></div>
+                        <div class="cep"><abbr title="Projet : ">p</abbr></div>
                       </div>
                     </div>
                     <div class="bachlor">
                       <div class="titre_bachlor bold">Bachelor 6</div>
                       <div class="titre">
-                        <div class="cep"><abbr title="c">c</abbr></div>
-                        <div class="cep"><abbr title="e">e</abbr></div>
-                        <div class="cep"><abbr title="p">p</abbr></div>
+                        <div class="cep"><abbr title="Cours : ">c</abbr></div>
+                        <div class="cep"><abbr title="Exercices : ">e</abbr></div>
+                        <div class="cep"><abbr title="Projet : ">p</abbr></div>
                       </div>
                     </div>
                     <div class="examen">
                       <div class="titre_bachlor bold">Examen</div>
                     </div>
                     <div class="credit">
-                      <div class="titre_bachlor bold">Crédits</div>
+                      <div class="titre_bachlor bold">Crédits / Coefficient</div>
                     </div>
                   </div>
                   <div class="clear"></div>
@@ -1298,53 +1206,53 @@
                     <div class="bachlor">
                       <div class="titre_bachlor bold">Bachelor 3</div>
                       <div class="titre">
-                        <div class="cep"><abbr title="c">c</abbr></div>
-                        <div class="cep"><abbr title="e">e</abbr></div>
-                        <div class="cep"><abbr title="p">p</abbr></div>
+                        <div class="cep"><abbr title="Cours : ">c</abbr></div>
+                        <div class="cep"><abbr title="Exercices : ">e</abbr></div>
+                        <div class="cep"><abbr title="Projet : ">p</abbr></div>
                       </div>
                     </div>
                     <div class="bachlor">
                       <div class="titre_bachlor bold">Bachelor 4</div>
                       <div class="titre">
-                        <div class="cep"><abbr title="c">c</abbr></div>
-                        <div class="cep"><abbr title="e">e</abbr></div>
-                        <div class="cep"><abbr title="p">p</abbr></div>
+                        <div class="cep"><abbr title="Cours : ">c</abbr></div>
+                        <div class="cep"><abbr title="Exercices : ">e</abbr></div>
+                        <div class="cep"><abbr title="Projet : ">p</abbr></div>
                       </div>
                     </div>
                     <div class="bachlor">
                       <div class="titre_bachlor bold">Bachelor 5</div>
                       <div class="titre">
-                        <div class="cep"><abbr title="c">c</abbr></div>
-                        <div class="cep"><abbr title="e">e</abbr></div>
-                        <div class="cep"><abbr title="p">p</abbr></div>
+                        <div class="cep"><abbr title="Cours : ">c</abbr></div>
+                        <div class="cep"><abbr title="Exercices : ">e</abbr></div>
+                        <div class="cep"><abbr title="Projet : ">p</abbr></div>
                       </div>
                     </div>
                     <div class="bachlor">
                       <div class="titre_bachlor bold">Bachelor 6</div>
                       <div class="titre">
-                        <div class="cep"><abbr title="c">c</abbr></div>
-                        <div class="cep"><abbr title="e">e</abbr></div>
-                        <div class="cep"><abbr title="p">p</abbr></div>
+                        <div class="cep"><abbr title="Cours : ">c</abbr></div>
+                        <div class="cep"><abbr title="Exercices : ">e</abbr></div>
+                        <div class="cep"><abbr title="Projet : ">p</abbr></div>
                       </div>
                     </div>
                     <div class="examen">
                       <div class="titre_bachlor bold">Examen</div>
                     </div>
                     <div class="credit">
-                      <div class="titre_bachlor bold">Crédits</div>
+                      <div class="titre_bachlor bold">Crédits / Coefficient</div>
                     </div>
                   </div>
                   <div class="clear"></div>
                 </div>
                 <div class="line-down">
                   <div class="line">
-                    <div data-title="Chimie générale" class="cours">
+                    <div data-title="Analyse IV" class="cours">
                       <div class="cours-name"><a
-                          href="/studyplan/fr/bachelor/systemes-de-communication/coursebook/chimie-generale-CH-160-B">Chimie
-                          générale</a></div>
-                      <div class="cours-info">CH-160(b) / Section CGC</div>
+                          href="/studyplan/fr/bachelor/systemes-de-communication/coursebook/analyse-iv-MATH-207-D">Analyse
+                          IV</a></div>
+                      <div class="cours-info">MATH-207(d) / Section MA</div>
                       <div class="enseignement-name"><a
-                          href="http://people.epfl.ch/cgi-bin/people?id=109839&amp;lang=fr&amp;cvlang=fr">Terrettaz</a>
+                          href="http://people.epfl.ch/cgi-bin/people?id=341718&amp;lang=fr&amp;cvlang=fr">Licht</a>
                       </div>
                     </div>
                     <div data-title="Langue" class="langue">
@@ -1359,15 +1267,15 @@
                     </div>
                     <div data-title="Bachelor 4" class="bachlor local-color bachlor-color">
                       <div class="bachlor-text">
-                        <div class="cep">-</div>
-                        <div class="cep">-</div>
+                        <div class="cep"><span class="label sr-only">Cours : </span>2h</div>
+                        <div class="cep"><span class="label sr-only">Exercices : </span>2h</div>
                         <div class="cep">-</div>
                       </div>
                     </div>
                     <div data-title="Bachelor 5" class="bachlor local-color-light bachlor-color">
                       <div class="bachlor-text">
-                        <div class="cep"><span class="label sr-only"></span>2h</div>
-                        <div class="cep"><span class="label sr-only"></span>1h</div>
+                        <div class="cep">-</div>
+                        <div class="cep">-</div>
                         <div class="cep">-</div>
                       </div>
                     </div>
@@ -1379,10 +1287,10 @@
                       </div>
                     </div>
                     <div data-title="Examen" class="examen">
-                      <div class="exam-text"><b>Session d'hiver</b><br /><span>Ecrit</span></div>
+                      <div class="exam-text"><b>Session d'été</b><br /><span>Ecrit</span></div>
                     </div>
                     <div data-title="Crédits" class="credit red-color">
-                      <div class="credit-time">3</div>
+                      <div class="credit-time">4</div>
                     </div><button class="btn-collapse">
                       <span class="show">afficher</span>
                       <span class="">masquer</span>
@@ -1400,7 +1308,7 @@
                           architecture</a></div>
                       <div class="cours-info">CS-200 / Section IN</div>
                       <div class="enseignement-name"><a
-                          href="http://people.epfl.ch/cgi-bin/people?id=317238&amp;lang=fr&amp;cvlang=fr">Khun Jush</a>
+                          href="http://people.epfl.ch/cgi-bin/people?id=101954&amp;lang=fr&amp;cvlang=fr">Ienne</a>
                       </div>
                     </div>
                     <div data-title="Langue" class="langue">
@@ -1408,9 +1316,9 @@
                     </div>
                     <div data-title="Bachelor 3" class="bachlor local-color-light bachlor-color">
                       <div class="bachlor-text">
-                        <div class="cep"><span class="label sr-only"></span>4h</div>
-                        <div class="cep"><span class="label sr-only"></span>4h</div>
-                        <div class="cep">-</div>
+                        <div class="cep"><span class="label sr-only">Cours : </span>4h</div>
+                        <div class="cep"><span class="label sr-only">Exercices : </span>2h</div>
+                        <div class="cep"><span class="label sr-only">Projet : </span>2h</div>
                       </div>
                     </div>
                     <div data-title="Bachelor 4" class="bachlor local-color bachlor-color">
@@ -1471,9 +1379,9 @@
                     </div>
                     <div data-title="Bachelor 4" class="bachlor local-color bachlor-color">
                       <div class="bachlor-text">
-                        <div class="cep">-</div>
-                        <div class="cep">-</div>
-                        <div class="cep">-</div>
+                        <div class="cep"><span class="label sr-only">Cours : </span>2h</div>
+                        <div class="cep"><span class="label sr-only">Exercices : </span>1h</div>
+                        <div class="cep"><span class="label sr-only">Projet : </span>2h</div>
                       </div>
                     </div>
                     <div data-title="Bachelor 5" class="bachlor local-color-light bachlor-color">
@@ -1485,9 +1393,9 @@
                     </div>
                     <div data-title="Bachelor 6" class="bachlor local-color bachlor-color">
                       <div class="bachlor-text">
-                        <div class="cep"><span class="label sr-only"></span>2h</div>
-                        <div class="cep"><span class="label sr-only"></span>1h</div>
-                        <div class="cep"><span class="label sr-only"></span>2h</div>
+                        <div class="cep">-</div>
+                        <div class="cep">-</div>
+                        <div class="cep">-</div>
                       </div>
                     </div>
                     <div data-title="Examen" class="examen">
@@ -1541,9 +1449,9 @@
                     </div>
                     <div data-title="Bachelor 6" class="bachlor local-color bachlor-color">
                       <div class="bachlor-text">
-                        <div class="cep"><span class="label sr-only"></span>2h</div>
-                        <div class="cep"><span class="label sr-only"></span>2h</div>
-                        <div class="cep"><span class="label sr-only"></span>2h</div>
+                        <div class="cep"><span class="label sr-only">Cours : </span>2h</div>
+                        <div class="cep"><span class="label sr-only">Exercices : </span>2h</div>
+                        <div class="cep"><span class="label sr-only">Projet : </span>2h</div>
                       </div>
                     </div>
                     <div data-title="Examen" class="examen">
@@ -1598,9 +1506,9 @@
                     </div>
                     <div data-title="Bachelor 6" class="bachlor local-color bachlor-color">
                       <div class="bachlor-text">
-                        <div class="cep"><span class="label sr-only"></span>2h</div>
-                        <div class="cep"><span class="label sr-only"></span>1h</div>
-                        <div class="cep"><span class="label sr-only"></span>2h</div>
+                        <div class="cep"><span class="label sr-only">Cours : </span>2h</div>
+                        <div class="cep"><span class="label sr-only">Exercices : </span>1h</div>
+                        <div class="cep"><span class="label sr-only">Projet : </span>2h</div>
                       </div>
                     </div>
                     <div data-title="Examen" class="examen">
@@ -1647,8 +1555,8 @@
                     </div>
                     <div data-title="Bachelor 5" class="bachlor local-color-light bachlor-color">
                       <div class="bachlor-text">
-                        <div class="cep"><span class="label sr-only"></span>2h</div>
-                        <div class="cep"><span class="label sr-only"></span>1h</div>
+                        <div class="cep"><span class="label sr-only">Cours : </span>2h</div>
+                        <div class="cep"><span class="label sr-only">Exercices : </span>1h</div>
                         <div class="cep">-</div>
                       </div>
                     </div>
@@ -1710,8 +1618,8 @@
                     </div>
                     <div data-title="Bachelor 6" class="bachlor local-color bachlor-color">
                       <div class="bachlor-text">
-                        <div class="cep"><span class="label sr-only"></span>2h</div>
-                        <div class="cep"><span class="label sr-only"></span>1h</div>
+                        <div class="cep"><span class="label sr-only">Cours : </span>2h</div>
+                        <div class="cep"><span class="label sr-only">Exercices : </span>1h</div>
                         <div class="cep">-</div>
                       </div>
                     </div>
@@ -1746,8 +1654,8 @@
                     </div>
                     <div data-title="Bachelor 3" class="bachlor local-color-light bachlor-color">
                       <div class="bachlor-text">
-                        <div class="cep"><span class="label sr-only"></span>2h</div>
-                        <div class="cep"><span class="label sr-only"></span>1h</div>
+                        <div class="cep"><span class="label sr-only">Cours : </span>2h</div>
+                        <div class="cep"><span class="label sr-only">Exercices : </span>1h</div>
                         <div class="cep">-</div>
                       </div>
                     </div>
@@ -1788,10 +1696,10 @@
                 </div>
                 <div class="line-down">
                   <div class="line">
-                    <div data-title="Electronique II" class="cours">
+                    <div data-title="Electronique II (pour IC)" class="cours">
                       <div class="cours-name"><a
-                          href="/studyplan/fr/bachelor/systemes-de-communication/coursebook/electronique-ii-EE-203-B">Electronique
-                          II</a></div>
+                          href="/studyplan/fr/bachelor/systemes-de-communication/coursebook/electronique-ii-pour-ic-EE-203-B">Electronique
+                          II (pour IC)</a></div>
                       <div class="cours-info">EE-203(b) / Section EL</div>
                       <div class="enseignement-name"><a
                           href="http://people.epfl.ch/cgi-bin/people?id=106334&amp;lang=fr&amp;cvlang=fr">Sallese</a>,
@@ -1817,8 +1725,8 @@
                     </div>
                     <div data-title="Bachelor 5" class="bachlor local-color-light bachlor-color">
                       <div class="bachlor-text">
-                        <div class="cep"><span class="label sr-only"></span>2h</div>
-                        <div class="cep"><span class="label sr-only"></span>2h</div>
+                        <div class="cep"><span class="label sr-only">Cours : </span>2h</div>
+                        <div class="cep"><span class="label sr-only">Exercices : </span>2h</div>
                         <div class="cep">-</div>
                       </div>
                     </div>
@@ -1834,60 +1742,6 @@
                     </div>
                     <div data-title="Crédits" class="credit red-color">
                       <div class="credit-time">4</div>
-                    </div><button class="btn-collapse">
-                      <span class="show">afficher</span>
-                      <span class="">masquer</span>
-                      <svg viewBox="0 0 10 5" xmlns="http://www.w3.org/2000/svg" class="icon">
-                        <path d="M.235.162h9.757l-4.879 4.77z" fill="#ffffff" fill-rule="evenodd" />
-                      </svg>
-                    </button>
-                  </div>
-                </div>
-                <div class="line-down">
-                  <div class="line">
-                    <div data-title="Electronique III" class="cours">
-                      <div class="cours-name"><a
-                          href="/studyplan/fr/bachelor/systemes-de-communication/coursebook/electronique-iii-EE-381">Electronique
-                          III</a> <i>(Pas donné en 2023-24)</i></div>
-                      <div class="cours-info">EE-381 / Section EL</div>
-                      <div class="enseignement-name"></div>
-                    </div>
-                    <div data-title="Langue" class="langue">
-                      <div class="langue"><abbr title="francais">FR</abbr></div>
-                    </div>
-                    <div data-title="Bachelor 3" class="bachlor local-color-light bachlor-color">
-                      <div class="bachlor-text">
-                        <div class="cep">-</div>
-                        <div class="cep">-</div>
-                        <div class="cep">-</div>
-                      </div>
-                    </div>
-                    <div data-title="Bachelor 4" class="bachlor local-color bachlor-color">
-                      <div class="bachlor-text">
-                        <div class="cep">-</div>
-                        <div class="cep">-</div>
-                        <div class="cep">-</div>
-                      </div>
-                    </div>
-                    <div data-title="Bachelor 5" class="bachlor local-color-light bachlor-color">
-                      <div class="bachlor-text">
-                        <div class="cep">-</div>
-                        <div class="cep">-</div>
-                        <div class="cep">-</div>
-                      </div>
-                    </div>
-                    <div data-title="Bachelor 6" class="bachlor local-color bachlor-color">
-                      <div class="bachlor-text">
-                        <div class="cep"><span class="label sr-only"></span>2h</div>
-                        <div class="cep"><span class="label sr-only"></span>1h</div>
-                        <div class="cep">-</div>
-                      </div>
-                    </div>
-                    <div data-title="Examen" class="examen">
-                      <div class="exam-text"><b>Session d'été</b><br /><span>Pendant le semestre</span></div>
-                    </div>
-                    <div data-title="Crédits" class="credit red-color">
-                      <div class="credit-time">3</div>
                     </div><button class="btn-collapse">
                       <span class="show">afficher</span>
                       <span class="">masquer</span>
@@ -1934,8 +1788,8 @@
                     </div>
                     <div data-title="Bachelor 6" class="bachlor local-color bachlor-color">
                       <div class="bachlor-text">
-                        <div class="cep"><span class="label sr-only"></span>2h</div>
-                        <div class="cep"><span class="label sr-only"></span>2h</div>
+                        <div class="cep"><span class="label sr-only">Cours : </span>2h</div>
+                        <div class="cep"><span class="label sr-only">Exercices : </span>2h</div>
                         <div class="cep">-</div>
                       </div>
                     </div>
@@ -1976,9 +1830,9 @@
                     </div>
                     <div data-title="Bachelor 4" class="bachlor local-color bachlor-color">
                       <div class="bachlor-text">
-                        <div class="cep"><span class="label sr-only"></span>2h</div>
+                        <div class="cep"><span class="label sr-only">Cours : </span>2h</div>
                         <div class="cep">-</div>
-                        <div class="cep"><span class="label sr-only"></span>2h</div>
+                        <div class="cep"><span class="label sr-only">Projet : </span>2h</div>
                       </div>
                     </div>
                     <div data-title="Bachelor 5" class="bachlor local-color-light bachlor-color">
@@ -2014,11 +1868,9 @@
                     <div data-title="Internet analytics" class="cours">
                       <div class="cours-name"><a
                           href="/studyplan/fr/bachelor/systemes-de-communication/coursebook/internet-analytics-COM-308">Internet
-                          analytics</a></div>
+                          analytics</a> <i>(pas donné en 2024-25)</i></div>
                       <div class="cours-info">COM-308 / Section SC</div>
-                      <div class="enseignement-name"><a
-                          href="http://people.epfl.ch/cgi-bin/people?id=152655&amp;lang=fr&amp;cvlang=fr">Grossglauser</a>
-                      </div>
+                      <div class="enseignement-name"></div>
                     </div>
                     <div data-title="Langue" class="langue">
                       <div class="langue"><abbr title="anglais">EN</abbr></div>
@@ -2046,9 +1898,9 @@
                     </div>
                     <div data-title="Bachelor 6" class="bachlor local-color bachlor-color">
                       <div class="bachlor-text">
-                        <div class="cep"><span class="label sr-only"></span>2h</div>
-                        <div class="cep"><span class="label sr-only"></span>1h</div>
-                        <div class="cep"><span class="label sr-only"></span>2h</div>
+                        <div class="cep"><span class="label sr-only">Cours : </span>2h</div>
+                        <div class="cep"><span class="label sr-only">Exercices : </span>1h</div>
+                        <div class="cep"><span class="label sr-only">Projet : </span>2h</div>
                       </div>
                     </div>
                     <div data-title="Examen" class="examen">
@@ -2088,8 +1940,8 @@
                     </div>
                     <div data-title="Bachelor 4" class="bachlor local-color bachlor-color">
                       <div class="bachlor-text">
-                        <div class="cep"><span class="label sr-only"></span>4h</div>
-                        <div class="cep"><span class="label sr-only"></span>2h</div>
+                        <div class="cep"><span class="label sr-only">Cours : </span>4h</div>
+                        <div class="cep"><span class="label sr-only">Exercices : </span>2h</div>
                         <div class="cep">-</div>
                       </div>
                     </div>
@@ -2112,119 +1964,6 @@
                     </div>
                     <div data-title="Crédits" class="credit red-color">
                       <div class="credit-time">6</div>
-                    </div><button class="btn-collapse">
-                      <span class="show">afficher</span>
-                      <span class="">masquer</span>
-                      <svg viewBox="0 0 10 5" xmlns="http://www.w3.org/2000/svg" class="icon">
-                        <path d="M.235.162h9.757l-4.879 4.77z" fill="#ffffff" fill-rule="evenodd" />
-                      </svg>
-                    </button>
-                  </div>
-                </div>
-                <div class="line-down">
-                  <div class="line">
-                    <div data-title="Introduction to multiprocessor architecture" class="cours">
-                      <div class="cours-name"><a
-                          href="/studyplan/fr/bachelor/systemes-de-communication/coursebook/introduction-to-multiprocessor-architecture-CS-307">Introduction
-                          to multiprocessor architecture</a> <i>(This course will be last given in autumn 2023)</i>
-                      </div>
-                      <div class="cours-info">CS-307 / Section IN</div>
-                      <div class="enseignement-name"><a
-                          href="http://people.epfl.ch/cgi-bin/people?id=177958&amp;lang=fr&amp;cvlang=fr">Falsafi</a>
-                      </div>
-                    </div>
-                    <div data-title="Langue" class="langue">
-                      <div class="langue"><abbr title="anglais">EN</abbr></div>
-                    </div>
-                    <div data-title="Bachelor 3" class="bachlor local-color-light bachlor-color">
-                      <div class="bachlor-text">
-                        <div class="cep">-</div>
-                        <div class="cep">-</div>
-                        <div class="cep">-</div>
-                      </div>
-                    </div>
-                    <div data-title="Bachelor 4" class="bachlor local-color bachlor-color">
-                      <div class="bachlor-text">
-                        <div class="cep">-</div>
-                        <div class="cep">-</div>
-                        <div class="cep">-</div>
-                      </div>
-                    </div>
-                    <div data-title="Bachelor 5" class="bachlor local-color-light bachlor-color">
-                      <div class="bachlor-text">
-                        <div class="cep"><span class="label sr-only"></span>2h</div>
-                        <div class="cep">-</div>
-                        <div class="cep"><span class="label sr-only"></span>1h</div>
-                      </div>
-                    </div>
-                    <div data-title="Bachelor 6" class="bachlor local-color bachlor-color">
-                      <div class="bachlor-text">
-                        <div class="cep">-</div>
-                        <div class="cep">-</div>
-                        <div class="cep">-</div>
-                      </div>
-                    </div>
-                    <div data-title="Examen" class="examen">
-                      <div class="exam-text"><b>Session d'hiver</b><br /><span>Pendant le semestre</span></div>
-                    </div>
-                    <div data-title="Crédits" class="credit red-color">
-                      <div class="credit-time">4</div>
-                    </div><button class="btn-collapse">
-                      <span class="show">afficher</span>
-                      <span class="">masquer</span>
-                      <svg viewBox="0 0 10 5" xmlns="http://www.w3.org/2000/svg" class="icon">
-                        <path d="M.235.162h9.757l-4.879 4.77z" fill="#ffffff" fill-rule="evenodd" />
-                      </svg>
-                    </button>
-                  </div>
-                </div>
-                <div class="line-down">
-                  <div class="line">
-                    <div data-title="Introduction to operating systems" class="cours">
-                      <div class="cours-name"><a
-                          href="/studyplan/fr/bachelor/systemes-de-communication/coursebook/introduction-to-operating-systems-CS-323">Introduction
-                          to operating systems</a> <i>(This course will be last given in autumn 2023)</i></div>
-                      <div class="cours-info">CS-323 / Section IN</div>
-                      <div class="enseignement-name"><a
-                          href="http://people.epfl.ch/cgi-bin/people?id=331765&amp;lang=fr&amp;cvlang=fr">Kashyap</a>
-                      </div>
-                    </div>
-                    <div data-title="Langue" class="langue">
-                      <div class="langue"><abbr title="anglais">EN</abbr></div>
-                    </div>
-                    <div data-title="Bachelor 3" class="bachlor local-color-light bachlor-color">
-                      <div class="bachlor-text">
-                        <div class="cep">-</div>
-                        <div class="cep">-</div>
-                        <div class="cep">-</div>
-                      </div>
-                    </div>
-                    <div data-title="Bachelor 4" class="bachlor local-color bachlor-color">
-                      <div class="bachlor-text">
-                        <div class="cep">-</div>
-                        <div class="cep">-</div>
-                        <div class="cep">-</div>
-                      </div>
-                    </div>
-                    <div data-title="Bachelor 5" class="bachlor local-color-light bachlor-color">
-                      <div class="bachlor-text">
-                        <div class="cep"><span class="label sr-only"></span>2h</div>
-                        <div class="cep"><span class="label sr-only"></span>1h</div>
-                        <div class="cep"><span class="label sr-only"></span>2h</div>
-                      </div>
-                    </div>
-                    <div data-title="Bachelor 6" class="bachlor local-color bachlor-color">
-                      <div class="bachlor-text">
-                        <div class="cep">-</div>
-                        <div class="cep">-</div>
-                        <div class="cep">-</div>
-                      </div>
-                    </div>
-                    <div data-title="Examen" class="examen">
-                      <div class="exam-text"><b>Session d'hiver</b><br /><span>Ecrit</span></div>
-                    </div>
-                    <div data-title="Crédits" class="credit red-color">
-                      <div class="credit-time">5</div>
                     </div><button class="btn-collapse">
                       <span class="show">afficher</span>
                       <span class="">masquer</span>
@@ -2272,8 +2011,8 @@
                     </div>
                     <div data-title="Bachelor 6" class="bachlor local-color bachlor-color">
                       <div class="bachlor-text">
-                        <div class="cep"><span class="label sr-only"></span>3h</div>
-                        <div class="cep"><span class="label sr-only"></span>1h</div>
+                        <div class="cep"><span class="label sr-only">Cours : </span>3h</div>
+                        <div class="cep"><span class="label sr-only">Exercices : </span>1h</div>
                         <div class="cep">-</div>
                       </div>
                     </div>
@@ -2321,8 +2060,8 @@
                     </div>
                     <div data-title="Bachelor 5" class="bachlor local-color-light bachlor-color">
                       <div class="bachlor-text">
-                        <div class="cep"><span class="label sr-only"></span>3h</div>
-                        <div class="cep"><span class="label sr-only"></span>1h</div>
+                        <div class="cep"><span class="label sr-only">Cours : </span>3h</div>
+                        <div class="cep"><span class="label sr-only">Exercices : </span>1h</div>
                         <div class="cep">-</div>
                       </div>
                     </div>
@@ -2349,11 +2088,66 @@
                 </div>
                 <div class="line-down">
                   <div class="line">
-                    <div data-title="Making intelligent things" class="cours">
+                    <div data-title="Making intelligent things A" class="cours">
                       <div class="cours-name"><a
-                          href="/studyplan/fr/bachelor/systemes-de-communication/coursebook/making-intelligent-things-CS-358">Making
-                          intelligent things</a></div>
-                      <div class="cours-info">CS-358 / Section IN</div>
+                          href="/studyplan/fr/bachelor/systemes-de-communication/coursebook/making-intelligent-things-a-CS-358-A">Making
+                          intelligent things A</a></div>
+                      <div class="cours-info">CS-358(a) / Section IN</div>
+                      <div class="enseignement-name"><a
+                          href="http://people.epfl.ch/cgi-bin/people?id=205917&amp;lang=fr&amp;cvlang=fr">Koch</a></div>
+                    </div>
+                    <div data-title="Langue" class="langue">
+                      <div class="langue"><abbr title="anglais">EN</abbr></div>
+                    </div>
+                    <div data-title="Bachelor 3" class="bachlor local-color-light bachlor-color">
+                      <div class="bachlor-text">
+                        <div class="cep">-</div>
+                        <div class="cep">-</div>
+                        <div class="cep">-</div>
+                      </div>
+                    </div>
+                    <div data-title="Bachelor 4" class="bachlor local-color bachlor-color">
+                      <div class="bachlor-text">
+                        <div class="cep">-</div>
+                        <div class="cep">-</div>
+                        <div class="cep">-</div>
+                      </div>
+                    </div>
+                    <div data-title="Bachelor 5" class="bachlor local-color-light bachlor-color">
+                      <div class="bachlor-text">
+                        <div class="cep">-</div>
+                        <div class="cep"><span class="label sr-only">Exercices : </span>1h</div>
+                        <div class="cep"><span class="label sr-only">Projet : </span>12h</div>
+                      </div>
+                    </div>
+                    <div data-title="Bachelor 6" class="bachlor local-color bachlor-color">
+                      <div class="bachlor-text">
+                        <div class="cep">-</div>
+                        <div class="cep">-</div>
+                        <div class="cep">-</div>
+                      </div>
+                    </div>
+                    <div data-title="Examen" class="examen">
+                      <div class="exam-text"><b>Session d'hiver</b><br /><span>Pendant le semestre</span></div>
+                    </div>
+                    <div data-title="Crédits" class="credit red-color">
+                      <div class="credit-time">8</div>
+                    </div><button class="btn-collapse">
+                      <span class="show">afficher</span>
+                      <span class="">masquer</span>
+                      <svg viewBox="0 0 10 5" xmlns="http://www.w3.org/2000/svg" class="icon">
+                        <path d="M.235.162h9.757l-4.879 4.77z" fill="#ffffff" fill-rule="evenodd" />
+                      </svg>
+                    </button>
+                  </div>
+                </div>
+                <div class="line-down">
+                  <div class="line">
+                    <div data-title="Making intelligent things B" class="cours">
+                      <div class="cours-name"><a
+                          href="/studyplan/fr/bachelor/systemes-de-communication/coursebook/making-intelligent-things-b-CS-358-B">Making
+                          intelligent things B</a></div>
+                      <div class="cours-info">CS-358(b) / Section IN</div>
                       <div class="enseignement-name"><a
                           href="http://people.epfl.ch/cgi-bin/people?id=205917&amp;lang=fr&amp;cvlang=fr">Koch</a></div>
                     </div>
@@ -2384,8 +2178,8 @@
                     <div data-title="Bachelor 6" class="bachlor local-color bachlor-color">
                       <div class="bachlor-text">
                         <div class="cep">-</div>
-                        <div class="cep">-</div>
-                        <div class="cep"><span class="label sr-only"></span>8h</div>
+                        <div class="cep"><span class="label sr-only">Exercices : </span>1h</div>
+                        <div class="cep"><span class="label sr-only">Projet : </span>12h</div>
                       </div>
                     </div>
                     <div data-title="Examen" class="examen">
@@ -2410,16 +2204,16 @@
                           analytique (pour SPH)</a></div>
                       <div class="cours-info">PHYS-202 / Section PH</div>
                       <div class="enseignement-name"><a
-                          href="http://people.epfl.ch/cgi-bin/people?id=144344&amp;lang=fr&amp;cvlang=fr">De Los
-                          Rios</a></div>
+                          href="http://people.epfl.ch/cgi-bin/people?id=190004&amp;lang=fr&amp;cvlang=fr">Jacquod</a>
+                      </div>
                     </div>
                     <div data-title="Langue" class="langue">
                       <div class="langue"><abbr title="francais">FR</abbr></div>
                     </div>
                     <div data-title="Bachelor 3" class="bachlor local-color-light bachlor-color">
                       <div class="bachlor-text">
-                        <div class="cep"><span class="label sr-only"></span>3h</div>
-                        <div class="cep"><span class="label sr-only"></span>2h</div>
+                        <div class="cep"><span class="label sr-only">Cours : </span>3h</div>
+                        <div class="cep"><span class="label sr-only">Exercices : </span>2h</div>
                         <div class="cep">-</div>
                       </div>
                     </div>
@@ -2460,13 +2254,12 @@
                 </div>
                 <div class="line-down">
                   <div class="line">
-                    <div data-title="Numerical methods for visual computing and ML" class="cours">
-                      <div class="cours-name"><a
-                          href="/studyplan/fr/bachelor/systemes-de-communication/coursebook/numerical-methods-for-visual-computing-and-ml-CS-328">Numerical
-                          methods for visual computing and ML</a></div>
-                      <div class="cours-info">CS-328 / Section IN</div>
+                    <div data-title="Neuroscience foundations for engineers" class="cours">
+                      <div class="cours-name">Neuroscience foundations for engineers</div>
+                      <div class="cours-info">BIOENG-310 / Section SV</div>
                       <div class="enseignement-name"><a
-                          href="http://people.epfl.ch/cgi-bin/people?id=265226&amp;lang=fr&amp;cvlang=fr">Jakob</a>
+                          href="http://people.epfl.ch/cgi-bin/people?id=365581&amp;lang=fr&amp;cvlang=fr">Schrimpf</a>,
+                        <a href="http://people.epfl.ch/cgi-bin/people?id=368500&amp;lang=fr&amp;cvlang=fr">Zenk</a>
                       </div>
                     </div>
                     <div data-title="Langue" class="langue">
@@ -2474,8 +2267,62 @@
                     </div>
                     <div data-title="Bachelor 3" class="bachlor local-color-light bachlor-color">
                       <div class="bachlor-text">
-                        <div class="cep"><span class="label sr-only"></span>2h</div>
-                        <div class="cep"><span class="label sr-only"></span>2h</div>
+                        <div class="cep">-</div>
+                        <div class="cep">-</div>
+                        <div class="cep">-</div>
+                      </div>
+                    </div>
+                    <div data-title="Bachelor 4" class="bachlor local-color bachlor-color">
+                      <div class="bachlor-text">
+                        <div class="cep">-</div>
+                        <div class="cep">-</div>
+                        <div class="cep">-</div>
+                      </div>
+                    </div>
+                    <div data-title="Bachelor 5" class="bachlor local-color-light bachlor-color">
+                      <div class="bachlor-text">
+                        <div class="cep">-</div>
+                        <div class="cep">-</div>
+                        <div class="cep">-</div>
+                      </div>
+                    </div>
+                    <div data-title="Bachelor 6" class="bachlor local-color bachlor-color">
+                      <div class="bachlor-text">
+                        <div class="cep"><span class="label sr-only">Cours : </span>3h</div>
+                        <div class="cep"><span class="label sr-only">Exercices : </span>3h</div>
+                        <div class="cep">-</div>
+                      </div>
+                    </div>
+                    <div data-title="Examen" class="examen">
+                      <div class="exam-text"><b>Session d'été</b><br /><span>Ecrit</span></div>
+                    </div>
+                    <div data-title="Crédits" class="credit red-color">
+                      <div class="credit-time">6</div>
+                    </div><button class="btn-collapse">
+                      <span class="show">afficher</span>
+                      <span class="">masquer</span>
+                      <svg viewBox="0 0 10 5" xmlns="http://www.w3.org/2000/svg" class="icon">
+                        <path d="M.235.162h9.757l-4.879 4.77z" fill="#ffffff" fill-rule="evenodd" />
+                      </svg>
+                    </button>
+                  </div>
+                </div>
+                <div class="line-down">
+                  <div class="line">
+                    <div data-title="Numerical methods for visual computing and ML" class="cours">
+                      <div class="cours-name"><a
+                          href="/studyplan/fr/bachelor/systemes-de-communication/coursebook/numerical-methods-for-visual-computing-and-ml-CS-328">Numerical
+                          methods for visual computing and ML</a> <i>(Pas donné en 2024-25)</i></div>
+                      <div class="cours-info">CS-328 / Section IN</div>
+                      <div class="enseignement-name"></div>
+                    </div>
+                    <div data-title="Langue" class="langue">
+                      <div class="langue"><abbr title="anglais">EN</abbr></div>
+                    </div>
+                    <div data-title="Bachelor 3" class="bachlor local-color-light bachlor-color">
+                      <div class="bachlor-text">
+                        <div class="cep"><span class="label sr-only">Cours : </span>2h</div>
+                        <div class="cep"><span class="label sr-only">Exercices : </span>2h</div>
                         <div class="cep">-</div>
                       </div>
                     </div>
@@ -2502,63 +2349,6 @@
                     </div>
                     <div data-title="Examen" class="examen">
                       <div class="exam-text"><b>Session d'hiver</b><br /><span>Ecrit</span></div>
-                    </div>
-                    <div data-title="Crédits" class="credit red-color">
-                      <div class="credit-time">4</div>
-                    </div><button class="btn-collapse">
-                      <span class="show">afficher</span>
-                      <span class="">masquer</span>
-                      <svg viewBox="0 0 10 5" xmlns="http://www.w3.org/2000/svg" class="icon">
-                        <path d="M.235.162h9.757l-4.879 4.77z" fill="#ffffff" fill-rule="evenodd" />
-                      </svg>
-                    </button>
-                  </div>
-                </div>
-                <div class="line-down">
-                  <div class="line">
-                    <div data-title="Parallelism and concurrency" class="cours">
-                      <div class="cours-name"><a
-                          href="/studyplan/fr/bachelor/systemes-de-communication/coursebook/parallelism-and-concurrency-CS-206">Parallelism
-                          and concurrency</a> <i>(réservé aux étudiants de IC devant refaire la matière)</i></div>
-                      <div class="cours-info">CS-206 / Section IN</div>
-                      <div class="enseignement-name"><a
-                          href="http://people.epfl.ch/cgi-bin/people?id=331765&amp;lang=fr&amp;cvlang=fr">Kashyap</a>,
-                        <a href="http://people.epfl.ch/cgi-bin/people?id=177241&amp;lang=fr&amp;cvlang=fr">Kuncak</a>
-                      </div>
-                    </div>
-                    <div data-title="Langue" class="langue">
-                      <div class="langue"><abbr title="anglais">EN</abbr></div>
-                    </div>
-                    <div data-title="Bachelor 3" class="bachlor local-color-light bachlor-color">
-                      <div class="bachlor-text">
-                        <div class="cep">-</div>
-                        <div class="cep">-</div>
-                        <div class="cep">-</div>
-                      </div>
-                    </div>
-                    <div data-title="Bachelor 4" class="bachlor local-color bachlor-color">
-                      <div class="bachlor-text">
-                        <div class="cep"><span class="label sr-only"></span>1h</div>
-                        <div class="cep"><span class="label sr-only"></span>1h</div>
-                        <div class="cep"><span class="label sr-only"></span>2h</div>
-                      </div>
-                    </div>
-                    <div data-title="Bachelor 5" class="bachlor local-color-light bachlor-color">
-                      <div class="bachlor-text">
-                        <div class="cep">-</div>
-                        <div class="cep">-</div>
-                        <div class="cep">-</div>
-                      </div>
-                    </div>
-                    <div data-title="Bachelor 6" class="bachlor local-color bachlor-color">
-                      <div class="bachlor-text">
-                        <div class="cep">-</div>
-                        <div class="cep">-</div>
-                        <div class="cep">-</div>
-                      </div>
-                    </div>
-                    <div data-title="Examen" class="examen">
-                      <div class="exam-text"><b>Session d'été</b><br /><span>Pendant le semestre</span></div>
                     </div>
                     <div data-title="Crédits" class="credit red-color">
                       <div class="credit-time">4</div>
@@ -2576,9 +2366,11 @@
                     <div data-title="Parallelism and concurrency in software" class="cours">
                       <div class="cours-name"><a
                           href="/studyplan/fr/bachelor/systemes-de-communication/coursebook/parallelism-and-concurrency-in-software-CS-302">Parallelism
-                          and concurrency in software</a> <i>(Pas donné en 2023-24)</i></div>
+                          and concurrency in software</a></div>
                       <div class="cours-info">CS-302 / Section IN</div>
-                      <div class="enseignement-name"></div>
+                      <div class="enseignement-name"><a
+                          href="http://people.epfl.ch/cgi-bin/people?id=177958&amp;lang=fr&amp;cvlang=fr">Falsafi</a>
+                      </div>
                     </div>
                     <div data-title="Langue" class="langue">
                       <div class="langue"><abbr title="anglais">EN</abbr></div>
@@ -2606,9 +2398,9 @@
                     </div>
                     <div data-title="Bachelor 6" class="bachlor local-color bachlor-color">
                       <div class="bachlor-text">
-                        <div class="cep"><span class="label sr-only"></span>3h</div>
-                        <div class="cep"><span class="label sr-only"></span>3h</div>
-                        <div class="cep">-</div>
+                        <div class="cep"><span class="label sr-only">Cours : </span>3h</div>
+                        <div class="cep"><span class="label sr-only">Exercices : </span>1h</div>
+                        <div class="cep"><span class="label sr-only">Projet : </span>2h</div>
                       </div>
                     </div>
                     <div data-title="Examen" class="examen">
@@ -2627,13 +2419,13 @@
                 </div>
                 <div class="line-down">
                   <div class="line">
-                    <div data-title="Quantum mechanics I" class="cours">
+                    <div data-title="Quantum mechanics for non-physicists" class="cours">
                       <div class="cours-name"><a
-                          href="/studyplan/fr/bachelor/systemes-de-communication/coursebook/quantum-mechanics-i-PHYS-207">Quantum
-                          mechanics I</a></div>
-                      <div class="cours-info">PHYS-207 / Section PH</div>
+                          href="/studyplan/fr/bachelor/systemes-de-communication/coursebook/quantum-mechanics-for-non-physicists-PHYS-344">Quantum
+                          mechanics for non-physicists</a></div>
+                      <div class="cours-info">PHYS-344 / Section PH</div>
                       <div class="enseignement-name"><a
-                          href="http://people.epfl.ch/cgi-bin/people?id=318383&amp;lang=fr&amp;cvlang=fr">Banerjee</a>
+                          href="http://people.epfl.ch/cgi-bin/people?id=348697&amp;lang=fr&amp;cvlang=fr">Manucharyan</a>
                       </div>
                     </div>
                     <div data-title="Langue" class="langue">
@@ -2648,15 +2440,15 @@
                     </div>
                     <div data-title="Bachelor 4" class="bachlor local-color bachlor-color">
                       <div class="bachlor-text">
-                        <div class="cep"><span class="label sr-only"></span>3h</div>
-                        <div class="cep"><span class="label sr-only"></span>2h</div>
+                        <div class="cep">-</div>
+                        <div class="cep">-</div>
                         <div class="cep">-</div>
                       </div>
                     </div>
                     <div data-title="Bachelor 5" class="bachlor local-color-light bachlor-color">
                       <div class="bachlor-text">
-                        <div class="cep">-</div>
-                        <div class="cep">-</div>
+                        <div class="cep"><span class="label sr-only">Cours : </span>2h</div>
+                        <div class="cep"><span class="label sr-only">Exercices : </span>2h</div>
                         <div class="cep">-</div>
                       </div>
                     </div>
@@ -2668,7 +2460,7 @@
                       </div>
                     </div>
                     <div data-title="Examen" class="examen">
-                      <div class="exam-text"><b>Session d'été</b><br /><span>Ecrit</span></div>
+                      <div class="exam-text"><b>Session d'hiver</b><br /><span>Oral</span></div>
                     </div>
                     <div data-title="Crédits" class="credit red-color">
                       <div class="credit-time">5</div>
@@ -2683,13 +2475,13 @@
                 </div>
                 <div class="line-down">
                   <div class="line">
-                    <div data-title="Signal processing for communications" class="cours">
+                    <div data-title="Responsible software" class="cours">
                       <div class="cours-name"><a
-                          href="/studyplan/fr/bachelor/systemes-de-communication/coursebook/signal-processing-for-communications-COM-303">Signal
-                          processing for communications</a> <i>(This course will be last given in spring 2024)</i></div>
-                      <div class="cours-info">COM-303 / Section SC</div>
+                          href="/studyplan/fr/bachelor/systemes-de-communication/coursebook/responsible-software-CS-290">Responsible
+                          software</a></div>
+                      <div class="cours-info">CS-290 / Section IN</div>
                       <div class="enseignement-name"><a
-                          href="http://people.epfl.ch/cgi-bin/people?id=110610&amp;lang=fr&amp;cvlang=fr">Prandoni</a>
+                          href="http://people.epfl.ch/cgi-bin/people?id=249277&amp;lang=fr&amp;cvlang=fr">Hardebolle</a>
                       </div>
                     </div>
                     <div data-title="Langue" class="langue">
@@ -2697,8 +2489,8 @@
                     </div>
                     <div data-title="Bachelor 3" class="bachlor local-color-light bachlor-color">
                       <div class="bachlor-text">
-                        <div class="cep">-</div>
-                        <div class="cep">-</div>
+                        <div class="cep"><span class="label sr-only">Cours : </span>2h</div>
+                        <div class="cep"><span class="label sr-only">Exercices : </span>2h</div>
                         <div class="cep">-</div>
                       </div>
                     </div>
@@ -2711,23 +2503,23 @@
                     </div>
                     <div data-title="Bachelor 5" class="bachlor local-color-light bachlor-color">
                       <div class="bachlor-text">
-                        <div class="cep">-</div>
-                        <div class="cep">-</div>
+                        <div class="cep"><span class="label sr-only">Cours : </span>2h</div>
+                        <div class="cep"><span class="label sr-only">Exercices : </span>2h</div>
                         <div class="cep">-</div>
                       </div>
                     </div>
                     <div data-title="Bachelor 6" class="bachlor local-color bachlor-color">
                       <div class="bachlor-text">
-                        <div class="cep"><span class="label sr-only"></span>4h</div>
-                        <div class="cep"><span class="label sr-only"></span>2h</div>
+                        <div class="cep">-</div>
+                        <div class="cep">-</div>
                         <div class="cep">-</div>
                       </div>
                     </div>
                     <div data-title="Examen" class="examen">
-                      <div class="exam-text"><b>Session d'été</b><br /><span>Ecrit</span></div>
+                      <div class="exam-text"><b>Session d'hiver</b><br /><span>Pendant le semestre</span></div>
                     </div>
                     <div data-title="Crédits" class="credit red-color">
-                      <div class="credit-time">6</div>
+                      <div class="credit-time">4</div>
                     </div><button class="btn-collapse">
                       <span class="show">afficher</span>
                       <span class="">masquer</span>
@@ -2756,9 +2548,9 @@
                     </div>
                     <div data-title="Bachelor 3" class="bachlor local-color-light bachlor-color">
                       <div class="bachlor-text">
-                        <div class="cep"><span class="label sr-only"></span>3h</div>
-                        <div class="cep"><span class="label sr-only"></span>2h</div>
-                        <div class="cep"><span class="label sr-only"></span>3h</div>
+                        <div class="cep"><span class="label sr-only">Cours : </span>3h</div>
+                        <div class="cep"><span class="label sr-only">Exercices : </span>2h</div>
+                        <div class="cep"><span class="label sr-only">Projet : </span>3h</div>
                       </div>
                     </div>
                     <div data-title="Bachelor 4" class="bachlor local-color bachlor-color">
@@ -2826,9 +2618,9 @@
                     </div>
                     <div data-title="Bachelor 5" class="bachlor local-color-light bachlor-color">
                       <div class="bachlor-text">
-                        <div class="cep"><span class="label sr-only"></span>2h</div>
+                        <div class="cep"><span class="label sr-only">Cours : </span>2h</div>
                         <div class="cep">-</div>
-                        <div class="cep"><span class="label sr-only"></span>2h</div>
+                        <div class="cep"><span class="label sr-only">Projet : </span>2h</div>
                       </div>
                     </div>
                     <div data-title="Bachelor 6" class="bachlor local-color bachlor-color">
@@ -2860,17 +2652,16 @@
                           for democratic society</a></div>
                       <div class="cours-info">CS-234 / Section IN</div>
                       <div class="enseignement-name"><a
-                          href="http://people.epfl.ch/cgi-bin/people?id=343069&amp;lang=fr&amp;cvlang=fr">Estrada-Galiñanes</a>
-                      </div>
+                          href="http://people.epfl.ch/cgi-bin/people?id=257875&amp;lang=fr&amp;cvlang=fr">Ford</a></div>
                     </div>
                     <div data-title="Langue" class="langue">
                       <div class="langue"><abbr title="anglais">EN</abbr></div>
                     </div>
                     <div data-title="Bachelor 3" class="bachlor local-color-light bachlor-color">
                       <div class="bachlor-text">
-                        <div class="cep"><span class="label sr-only"></span>2h</div>
-                        <div class="cep"><span class="label sr-only"></span>1h</div>
-                        <div class="cep"><span class="label sr-only"></span>2h</div>
+                        <div class="cep"><span class="label sr-only">Cours : </span>2h</div>
+                        <div class="cep"><span class="label sr-only">Exercices : </span>1h</div>
+                        <div class="cep"><span class="label sr-only">Projet : </span>2h</div>
                       </div>
                     </div>
                     <div data-title="Bachelor 4" class="bachlor local-color bachlor-color">
@@ -2930,8 +2721,8 @@
                     </div>
                     <div data-title="Bachelor 4" class="bachlor local-color bachlor-color">
                       <div class="bachlor-text">
-                        <div class="cep"><span class="label sr-only"></span>2h</div>
-                        <div class="cep"><span class="label sr-only"></span>2h</div>
+                        <div class="cep"><span class="label sr-only">Cours : </span>2h</div>
+                        <div class="cep"><span class="label sr-only">Exercices : </span>2h</div>
                         <div class="cep">-</div>
                       </div>
                     </div>
@@ -2994,20 +2785,20 @@
                     </div>
                     <div data-title="Bachelor 5" class="bachlor local-color-light bachlor-color">
                       <div class="bachlor-text">
-                        <div class="cep">-</div>
-                        <div class="cep">-</div>
-                        <div class="cep">-</div>
+                        <div class="cep"><span class="label sr-only">Cours : </span>2h</div>
+                        <div class="cep"><span class="label sr-only">Exercices : </span>1h</div>
+                        <div class="cep"><span class="label sr-only">Projet : </span>10h</div>
                       </div>
                     </div>
                     <div data-title="Bachelor 6" class="bachlor local-color bachlor-color">
                       <div class="bachlor-text">
-                        <div class="cep"><span class="label sr-only"></span>2h</div>
-                        <div class="cep"><span class="label sr-only"></span>1h</div>
-                        <div class="cep"><span class="label sr-only"></span>10h</div>
+                        <div class="cep">-</div>
+                        <div class="cep">-</div>
+                        <div class="cep">-</div>
                       </div>
                     </div>
                     <div data-title="Examen" class="examen">
-                      <div class="exam-text"><b>Session d'été</b><br /><span>Pendant le semestre</span></div>
+                      <div class="exam-text"><b>Session d'hiver</b><br /><span>Pendant le semestre</span></div>
                     </div>
                     <div data-title="Crédits" class="credit red-color">
                       <div class="credit-time">8</div>
@@ -3034,40 +2825,40 @@
                     <div class="bachlor">
                       <div class="titre_bachlor bold">Bachelor 3</div>
                       <div class="titre">
-                        <div class="cep"><abbr title="c">c</abbr></div>
-                        <div class="cep"><abbr title="e">e</abbr></div>
-                        <div class="cep"><abbr title="p">p</abbr></div>
+                        <div class="cep"><abbr title="Cours : ">c</abbr></div>
+                        <div class="cep"><abbr title="Exercices : ">e</abbr></div>
+                        <div class="cep"><abbr title="Projet : ">p</abbr></div>
                       </div>
                     </div>
                     <div class="bachlor">
                       <div class="titre_bachlor bold">Bachelor 4</div>
                       <div class="titre">
-                        <div class="cep"><abbr title="c">c</abbr></div>
-                        <div class="cep"><abbr title="e">e</abbr></div>
-                        <div class="cep"><abbr title="p">p</abbr></div>
+                        <div class="cep"><abbr title="Cours : ">c</abbr></div>
+                        <div class="cep"><abbr title="Exercices : ">e</abbr></div>
+                        <div class="cep"><abbr title="Projet : ">p</abbr></div>
                       </div>
                     </div>
                     <div class="bachlor">
                       <div class="titre_bachlor bold">Bachelor 5</div>
                       <div class="titre">
-                        <div class="cep"><abbr title="c">c</abbr></div>
-                        <div class="cep"><abbr title="e">e</abbr></div>
-                        <div class="cep"><abbr title="p">p</abbr></div>
+                        <div class="cep"><abbr title="Cours : ">c</abbr></div>
+                        <div class="cep"><abbr title="Exercices : ">e</abbr></div>
+                        <div class="cep"><abbr title="Projet : ">p</abbr></div>
                       </div>
                     </div>
                     <div class="bachlor">
                       <div class="titre_bachlor bold">Bachelor 6</div>
                       <div class="titre">
-                        <div class="cep"><abbr title="c">c</abbr></div>
-                        <div class="cep"><abbr title="e">e</abbr></div>
-                        <div class="cep"><abbr title="p">p</abbr></div>
+                        <div class="cep"><abbr title="Cours : ">c</abbr></div>
+                        <div class="cep"><abbr title="Exercices : ">e</abbr></div>
+                        <div class="cep"><abbr title="Projet : ">p</abbr></div>
                       </div>
                     </div>
                     <div class="examen">
                       <div class="titre_bachlor bold">Examen</div>
                     </div>
                     <div class="credit">
-                      <div class="titre_bachlor bold">Crédits</div>
+                      <div class="titre_bachlor bold">Crédits / Coefficient</div>
                     </div>
                   </div>
                   <div class="clear"></div>
@@ -3111,9 +2902,9 @@
                     </div>
                     <div data-title="Bachelor 6" class="bachlor local-color bachlor-color">
                       <div class="bachlor-text">
-                        <div class="cep"><span class="label sr-only"></span>2h</div>
+                        <div class="cep"><span class="label sr-only">Cours : </span>2h</div>
                         <div class="cep">-</div>
-                        <div class="cep"><span class="label sr-only"></span>10h</div>
+                        <div class="cep"><span class="label sr-only">Projet : </span>10h</div>
                       </div>
                     </div>
                     <div data-title="Examen" class="examen">
@@ -3160,14 +2951,14 @@
                       <div class="bachlor-text">
                         <div class="cep">-</div>
                         <div class="cep">-</div>
-                        <div class="cep"><span class="label sr-only"></span>2h</div>
+                        <div class="cep"><span class="label sr-only">Projet : </span>2h</div>
                       </div>
                     </div>
                     <div data-title="Bachelor 6" class="bachlor local-color bachlor-color">
                       <div class="bachlor-text">
                         <div class="cep">-</div>
                         <div class="cep">-</div>
-                        <div class="cep"><span class="label sr-only"></span>2h</div>
+                        <div class="cep"><span class="label sr-only">Projet : </span>2h</div>
                       </div>
                     </div>
                     <div data-title="Examen" class="examen">
@@ -3203,7 +2994,7 @@
                   <li><a href="/studyplan/fr/bachelor/genie-civil/" title="Génie civil">Génie civil</a></li>
                   <li><a href="/studyplan/fr/bachelor/genie-mecanique/" title="Génie mécanique">Génie mécanique</a></li>
                   <li><a href="/studyplan/fr/bachelor/genie-electrique-et-electronique/"
-                      title="Génie électrique et électronique ">Génie électrique et électronique </a></li>
+                      title="Génie électrique et électronique">Génie électrique et électronique</a></li>
                   <li><a href="/studyplan/fr/bachelor/informatique/" title="Informatique">Informatique</a></li>
                   <li><a href="/studyplan/fr/bachelor/ingenierie-des-sciences-du-vivant/"
                       title="Ingénierie des sciences du vivant">Ingénierie des sciences du vivant</a></li>
@@ -3237,7 +3028,7 @@
             <div class="row">
               <div class="col-6 mx-auto mx-md-0 mb-4 col-md-3 col-lg-2">
                 <a href="//www.epfl.ch">
-                  <img src="https://web2018.epfl.ch/6.5.1/icons/epfl-logo.svg"
+                  <img src="https://web2018.epfl.ch/7.0.0/icons/epfl-logo.svg"
                     alt="Logo EPFL, Ecole polytechnique fédérale de Lausanne" class="img-fluid">
                 </a>
               </div>
@@ -3325,15 +3116,15 @@
 
     </div>
   </div>
-  <!-- <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PJGBG5R" height="0" width="0"
-      style="display:none;visibility:hidden"></iframe></noscript> -->
+  <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PJGBG5R" height="0" width="0"
+      style="display:none;visibility:hidden"></iframe></noscript>
 
   <script>
-    svgPath = 'https://web2018.epfl.ch/6.5.1/icons/icons.svg';
-    featherSvgPath = 'https://web2018.epfl.ch/6.5.1/icons/feather-sprite.svg';
+    svgPath = 'https://web2018.epfl.ch/7.0.0/icons/icons.svg';
+    featherSvgPath = 'https://web2018.epfl.ch/7.0.0/icons/feather-sprite.svg';
   </script>
 
-  <script src="https://web2018.epfl.ch/6.5.1/js/elements.min.js"></script>
+  <script src="https://web2018.epfl.ch/7.0.0/js/elements.min.js"></script>
   <script>
     window.semesterNum = 3;
   </script>

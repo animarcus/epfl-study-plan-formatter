@@ -43,7 +43,8 @@ function adaptLinks() {
 }
 
 function getNewState(): Element {
-    const container = document.querySelector(".container-full.px-5.px-xxl-6.mt-5")!;
+    const container = document.querySelector(".container-full")!;
+    // console.log(container)
     let originalState: Element = container.cloneNode(true) as Element;
     
     return originalState.cloneNode(true) as Element;;
@@ -54,7 +55,7 @@ function restoreOriginalState(originalState: Node) {
 }
 
 function applyState(state: Node) {
-    const container = document.querySelector(".container-full.px-5.px-xxl-6.mt-5");
+    const container = document.querySelector(".container-full");
     if (container && state) {
         container.replaceWith(state);
     }
@@ -67,12 +68,15 @@ function createNavbar(parent: Element) {
     navbar.style.padding = '10px'; // Add some padding
     navbar.style.margin = '30px 20px';
 
-    const pages = ['bachelor-in', 'in-ba3', 'in-ba4', 'sc-ba3', 'sc-ba4'];
+    const pages = ['bachelor-in', 'bachelor-sc',, 'in-ba3', 'in-ba4', 'sc-ba3', 'sc-ba4'];
     pages.forEach(page => {
         const link = document.createElement('a');
         link.href = `${page}.html`;
         if (page == 'bachelor-in') {
-            link.href = 'index.html';
+            link.href = 'in.html';
+        }
+        if (page == 'bachelor-sc') {
+            link.href = 'sc.html';
         }
         link.textContent = page.toUpperCase().replace('-', ' ');
         link.style.backgroundColor = '#4CAF50'; // Green background
